@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 import requests
 page = requests.get("https://www.scorespro.com/rss2/live-cricket.xml")
 soup = BeautifulSoup(page.content, 'html.parser')
-p=soup.find_all('title')[2].get_text()
+p=soup.find_all('title')[1].get_text()
 #print(page)
 #print(page.content)
 #print(soup.prettify())
